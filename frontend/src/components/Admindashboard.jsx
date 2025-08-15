@@ -32,10 +32,10 @@ const AdminDashboard = () => {
       
       // Fetch pending workers and stats simultaneously
       const [workersResponse, statsResponse] = await Promise.all([
-        fetch('/api/admin/workers/pending', {
+        fetch('https://handyconnect.onrender.com/api/admin/workers/pending', {
           headers: { Authorization: `Bearer ${token}` }
         }),
-        fetch('/api/admin/dashboard/stats', {
+        fetch('https://handyconnect.onrender.com/api/admin/dashboard/stats', {
           headers: { Authorization: `Bearer ${token}` }
         })
       ]);
@@ -493,6 +493,7 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
 
 
 
