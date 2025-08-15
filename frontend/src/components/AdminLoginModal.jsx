@@ -16,7 +16,7 @@ const AdminLoginModal = ({ isOpen, onClose }) => {
     setError('');
 
     try {
-      const response = await fetch('/api/admin/login', {
+      const response = await fetch('https://handyconnect.onrender.com/api/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -116,3 +116,4 @@ const AdminLoginModal = ({ isOpen, onClose }) => {
 };
 
 export default AdminLoginModal;
+
