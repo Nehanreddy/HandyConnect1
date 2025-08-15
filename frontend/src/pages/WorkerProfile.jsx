@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import API from "../services/api";
 import { useWorkerAuth } from "../context/WorkerAuthContext";
 import { Pen, Check, X } from "lucide-react";
-import WorkerNavbar from "../components/Workernavbar";
+import WorkerNavbar from "../components/WorkerNavbar";
 
 const WorkerProfile = () => {
   const { worker } = useWorkerAuth();

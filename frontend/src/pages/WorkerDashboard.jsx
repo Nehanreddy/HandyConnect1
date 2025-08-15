@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import WorkerNavbar from '../components/Workernavbar';
+import WorkerNavbar from '../components/WorkerNavbar';
 import { useWorkerAuth } from '../context/WorkerAuthContext';
 import {
   StarIcon,
