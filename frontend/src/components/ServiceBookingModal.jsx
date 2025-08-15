@@ -47,7 +47,7 @@ const ServiceBookingModal = ({ serviceType, onClose }) => {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const res = await axios.get('/api/auth/profile', {
+        const res = await axios.get('https://handyconnect.onrender.com/api/auth/profile', {
           headers: { Authorization: `Bearer ${token}` }
         });
 
