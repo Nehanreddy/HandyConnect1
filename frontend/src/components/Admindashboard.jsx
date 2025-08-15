@@ -19,7 +19,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     if (!admin) {
-      navigate('/worker');
+      navigate('https://handyconnect.onrender.com/worker');
       return;
     }
     fetchDashboardData();
@@ -159,11 +159,11 @@ const AdminDashboard = () => {
 
   const handleLogout = () => {
     logoutAdmin();
-    navigate('/worker');
+    navigate('https://handyconnect.onrender.com/worker');
   };
 
   const handleLogoClick = () => {
-    navigate('/worker');
+    navigate('https://handyconnect.onrender.com/worker');
   };
 
   if (loading) {
@@ -493,4 +493,5 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
 
