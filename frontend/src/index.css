@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+/* index.css or App.css */
+
+
+
+@keyframes slide-in-blur-left {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slide-in-blur-right {
+  0% {
+    transform: translateX(60px);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slide-in-blur-up {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-in-blur-left 1s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slide-in-blur-right 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-in-blur-up 1s ease-out forwards;
+}
