@@ -13,7 +13,7 @@ const AdminWorkerList = () => {
   const fetchWorkers = async () => {
     try {
       const token = localStorage.getItem('adminToken');
-      const response = await fetch('/api/admin/workers/all', {
+      const response = await fetch('https://handyconnect.onrender.com/api/admin/workers/all', {
         headers: { Authorization: `Bearer ${token}` }
       });
       const data = await response.json();
@@ -38,7 +38,7 @@ const AdminWorkerList = () => {
 
     try {
       const token = localStorage.getItem('adminToken');
-      const response = await fetch(`/api/admin/workers/${workerId}`, {
+      const response = await fetch(`https://handyconnect.onrender.com/api/admin/workers/${workerId}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -164,3 +164,4 @@ const AdminWorkerList = () => {
 };
 
 export default AdminWorkerList;
+
