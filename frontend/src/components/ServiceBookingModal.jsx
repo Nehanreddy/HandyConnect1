@@ -164,7 +164,7 @@ const ServiceBookingModal = ({ serviceType, onClose }) => {
     }
 
     try {
-      const res = await axios.post('/api/bookings', bookingData, {
+      const res = await axios.post('https://handyconnect.onrender.com/api/bookings', bookingData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       toast.success('Booking submitted successfully! 🎉');
