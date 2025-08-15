@@ -87,7 +87,7 @@ const AdminDashboard = () => {
 
     try {
       const token = localStorage.getItem('adminToken');
-      const response = await fetch(`/api/admin/workers/${workerId}`, {
+      const response = await fetch(`https://handyconnect.onrender.com/api/admin/workers/${workerId}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -108,7 +108,7 @@ const AdminDashboard = () => {
   const handleApprove = async (workerId) => {
     try {
       const token = localStorage.getItem('adminToken');
-      const response = await fetch(`/api/admin/workers/${workerId}/approve`, {
+      const response = await fetch(`https://handyconnect.onrender.com/api/admin/workers/${workerId}/approve`, {
         method: 'PUT',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -132,7 +132,7 @@ const AdminDashboard = () => {
 
     try {
       const token = localStorage.getItem('adminToken');
-      const response = await fetch(`/api/admin/workers/${selectedWorker._id}/reject`, {
+      const response = await fetch(`https://handyconnect.onrender.com/api/admin/workers/${selectedWorker._id}/reject`, {
         method: 'PUT',
         headers: { 
           'Content-Type': 'application/json',
@@ -493,3 +493,4 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
